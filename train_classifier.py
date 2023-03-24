@@ -7,7 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.multioutput import MultiOutputClassifier
 import numpy as np
 from nltk.tokenize import word_tokenize
-nltk.download('wordnet')
+nltk.download(['punkt', 'wordnet'])
 from nltk.stem import WordNetLemmatizer
 from sqlalchemy import create_engine
 from sklearn.multioutput import MultiOutputClassifier
@@ -16,7 +16,6 @@ from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.ensemble import RandomForestClassifier
-nltk.download('punkt')
 from sklearn.metrics import classification_report
 import pickle
 
@@ -79,9 +78,9 @@ def evaluate_model(model, X_test, categories):
     y_test_df = pd.DataFrame(y_test, columns=categories)
     y_test_sel = y_test_df.loc[:, y_pred_df.columns]
 
-for category in categories:
-    print("Category: {}".format(category))
-    print(classification_report(y_test_sel[category], y_pred_df[category]))
+    for category in categories:
+        print("Category: {}".format(category))
+        print(classification_report(y_test_sel[category], y_pred_df[category]))
 
 def save_model(model, model_filepath):
      joblib.dump(model, model_filepath)
