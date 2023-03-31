@@ -39,11 +39,11 @@ For this project you will need to install some libraries like:
 You can run the following commands in the project's directory to set up the database, train model and save the model.
 
 To run ETL pipeline to clean data and store the processed data in the database:
-• python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv disaster_response_db.db
+1. python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv disaster_response_db.db
 To run the ML pipeline that loads data from DB, trains classifier and saves the classifier as a pickle file:
-• python models/train_classifier.py disaster_response_db.db models/classifier.pkl
+2. python models/train_classifier.py disaster_response_db.db models/classifier.pkl
 Run the following command in the app's directory to run your web app:
-• python app/run.py
+3. python app/run.py
 
 Go to http://0.0.0.0:3000/
 
@@ -54,5 +54,5 @@ Go to http://0.0.0.0:3000/
 ![Captura de tela 2023-03-31 180003](https://user-images.githubusercontent.com/103281382/229229143-9284cd03-cf6a-44b7-82ea-919b50ea1eca.png)
 
 # Acknowledgements
-• Udacity for providing an amazing Data Science Nanodegree Program
-• Figure Eight for providing the relevant dataset to train the model
+1. Udacity for providing an amazing Data Science Nanodegree Program
+2. Figure Eight for providing the relevant dataset to train the model
