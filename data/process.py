@@ -36,10 +36,18 @@ def clean_data(df):
     df.drop_duplicates(subset = 'id', inplace = True)
     return df
 
-def save_data(df, database_filepath):    
-    engine = create_engine('sqlite:///' + database_filepath)
-    df.to_sql('Message', engine, index=False, if_exists='replace')
-
+def save_data(df, database_filepath):
+    """
+    Save Data to SQLite Database Function
+    
+    Arguments:
+        df -> Combined data containing messages and categories with categories cleaned up
+        database_filename -> Path to SQLite destination database
+    """
+    
+    engine = create_engine('sqlite:///'+ database_filepath)
+    table_name = database_filepath.replace(".db","") + "_table"
+    df.to_sql(table_name, engine, index=False, if_exists='replace')
 def main():
     if len(sys.argv) == 4:
 
