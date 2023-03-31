@@ -28,12 +28,11 @@ This project is divided in the following sections:
 # Installation
 For this project you will need to install some libraries like:
 1. NumPy
-2. SciPy
-3. Pandas
-4. Scikit-Learn
-5. NLTK
-6. SQLalchemy
-7. Picle
+2. Pandas
+3. Scikit-Learn
+4. NLTK
+5. SQLalchemy
+6. Picle
 
 # Executing
 You can run the following commands in the project's directory to set up the database, train model and save the model.
