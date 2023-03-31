@@ -51,5 +51,5 @@ Go to http://0.0.0.0:3000/
 ![Captura de tela 2023-03-31 180003](https://user-images.githubusercontent.com/103281382/229229143-9284cd03-cf6a-44b7-82ea-919b50ea1eca.png)
 
 # Acknowledgements
-Udacity for providing an amazing Data Science Nanodegree Program
-Figure Eight for providing the relevant dataset to train the model
+• Udacity for providing an amazing Data Science Nanodegree Program
+• Figure Eight for providing the relevant dataset to train the model
