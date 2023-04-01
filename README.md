@@ -1,6 +1,5 @@
 # Certification of the Udacity Data Science course
 ![Captura de tela 2023-04-01 125957](https://user-images.githubusercontent.com/103281382/229301535-3376eae2-659a-45a5-981e-ac514458b78a.png)
-# UdacityProject
 # Disaster Response Pipeline Project (Udacity - Data Science Nanodegree)
 
     .
